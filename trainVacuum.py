@@ -1,8 +1,9 @@
 from agent_strategy4 import VacuumEnvironment, INITIAL_GRID
 from qLearning_Agent import QLearningAgent
 
-def trainVacuum(episodes=1000, living_reward = -0.04):
-    agent = QLearningAgent()
+def trainVacuum(episodes=1000, living_reward = -0.04,
+                learning_rate=0.1, discount_factor=0.9, epsilon=0.1):
+    agent = QLearningAgent(learning_rate, discount_factor, epsilon)
 
     for episode in range(episodes):
         # Reset the environment for each training episode
