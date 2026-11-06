@@ -31,7 +31,7 @@ Actions: `UP`, `DOWN`, `LEFT`, `RIGHT`, `SUCK`, `NO-OP`.
 ├── vacuum_world_lab4.ipynb # Builds off Lab4, Lab5 Testing at the bottom of the notebook
 ├── trainVacuum.py #training the qlearning agent
 ├── qLearning_Agent.py #implements Q Learning strategy
-├── videos.txt #links to YouTube videos
+├── video_links.txt #links to YouTube videos
 └── /aima # AIMA repository
 
 ## How to Run
