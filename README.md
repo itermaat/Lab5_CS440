@@ -1,15 +1,8 @@
-# Vacuum World — Context Engineering Strategies 1 & 4
+# Vacuum World — Q Learning
 
 ## Overview
 
-Implementation of the AIMA vacuum world (4x4 grid) controlled by two
-different context-engineering agent architectures:
-
-- **Strategy 1**: Persistent memory architecture
-- **Strategy 4**: Isolation via sub-agent
-
-Q-learning will be added in a later lab; this repository contains the
-environment and agent scaffolding only.
+Implementation of the AIMA vacuum world (4x4 grid) using Q Learning
 
 ## Environment
 
@@ -35,16 +28,11 @@ Actions: `UP`, `DOWN`, `LEFT`, `RIGHT`, `SUCK`, `NO-OP`.
 ├── spec.md # Specification file handed to the LLM
 ├── requirements.txt
 ├── bootstrap.ipynb
-├── vacuum_world_lab4.ipynb # Strategy 1: persistent memory agent
-├── /Test # Vacuum world tests
+├── vacuum_world_lab4.ipynb # Builds off Lab4, Lab5 Testing at the bottom of the notebook
+├── trainVacuum.py #training the qlearning agent
+├── qLearning_Agent.py #implements Q Learning strategy
+├── videos.txt #links to YouTube videos
 └── /aima # AIMA repository
-
-### Strategy 1 — Persistent Memory (`agent_strategy1.py`)
-
-The agent keeps an internal dictionary of everything it has learned
-about the grid (visited cells, known obstacles, known rewards). Decisions
-are made from `current percept + stored memory`, so the agent does not
-re-explore known cells and does not loop forever.
 
 ## How to Run
 
